@@ -104,19 +104,19 @@ question3 = {
   qNum: 3,
   picture: 'elements/characterPhotos/Stoneheart.jpg'
 },
-question4 ={
-  question: "What is this character's name",
-  correct: 4,
-  fact: 'Season 1, Episode 1',
+question4 = {
+  question: "What was the winter in which the White Walkers last appeared called?",
+  correct: 'The Long Night',
+  fact: 'Eight thousand years before the Targaryen Conquest, a winter known as the Long Night descended upon the world, which lasted an entire generation. Thousands starved as the crops and fields lay buried under dozens of feet of snow. In the darkness and cold of the Long Night, the White Walkers descended upon Westeros from the farthest north, the polar regions of the Lands of Always Winter. The conflict that arose from the Long Night is known as the War for the Dawn.',
   qNum: 4,
-  picture: 'css/Kings_Landing.jpg'
+  picture: 'elements/characterPhotos/whitewalker.jpg'
 },
 question5 = {
-  question: "What is this character's name",
-  correct: 4,
-  fact: 'Season 1, Episode 1',
+  question: "Who constructed the Wall?",
+  correct: "Bran the Builder",
+  fact: 'Bran the Builder was a legendary member of the First Men from the Age of Heroes, the founder of House Stark, and the first King in the North. Many famous structures are attributed to have been built under his direction, hence his nickname of "the Builder", including Winterfell and most famously the Wall, which according to legend, he raised with the aid of giants.',
   qNum: 5,
-  picture: 'css/Kings_Landing.jpg'
+  picture: 'elements/characterPhotos/The_Wall.jpg'
 }];
 
 // Loads the difficulty - I know there's a better way to do this but I was having trouble with the script load order and getting them to talk to each other //

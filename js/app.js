@@ -60,25 +60,23 @@ var questionManager = {
 
 // Loads game //
 $(document).ready(function() {
-  initialize();
+  $('.difficulty').click(function() {
+    if (this.id === "1")  { questionManager.questions = loadEasyQuestions(); questionManager['questionType'] = 1; questionManager['pointValue'] = 1; }
+    else if (this.id === "2") { questionManager.questions = loadMediumQuestions(); questionManager['questionType'] = 1; questionManager['pointValue'] = 2; }
+    else if (this.id === "3") { questionManager.questions = loadHardQuestions(); questionManager['questionType'] = 2; questionManager['pointValue'] = 3; }
+      questionManager.showQuestion();
+      $('.content-wrapper').animate({height: "820px"}, 200, 'linear', function() {
+          $('#game-area').animate({opacity: "1"}, 1000);
+      });
+      $('#game-area').css("display", "inherit");
+
+      $('.game-start').hide();
+  });
 });
 
 // Load function //
-function initialize() {
-$('.difficulty').one('click', function() {
-  var id = this.id;
-  if (id === "1")  { questionManager.questions = loadEasyQuestions(); questionManager['questionType'] = 1; questionManager['pointValue'] = 1; }
-  else if (id === "2") { questionManager.questions = loadMediumQuestions(); questionManager['questionType'] = 1; questionManager['pointValue'] = 2; }
-  else if (id === "3") { questionManager.questions = loadHardQuestions(); questionManager['questionType'] = 2; questionManager['pointValue'] = 3; }
-    questionManager.showQuestion();
-    $('.content-wrapper').animate({height: "820px"}, 200, 'linear', function() {
-        $('#game-area').animate({opacity: "1"}, 1000);
-    });
-    $('#game-area').css("display", "inherit");
 
-    $('.game-start').hide();
-});
-}
+
 
 // Loads answer for submission //
 $('.answers').on('click', '.option', function() {
