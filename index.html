@@ -6,62 +6,74 @@
 </head>
 <body>
   <div class="content-wrapper">
+    <section id="answer-area">
+      <div class="answer-screen">
+        <div class="center">
+          <h2>Answer</h2>
+          <p class="screen">Test</p>
+          <button id="next" type="style">Next question</button>
+        </div>
+      </div>
+    </section>
+    <section id="final-score">
+      <div class="answer-screen">
+        <div class="center">
+          <h2>Final Screen</h2>
+          <p class="screen">Questions Right</p>
+          <button class="restart" type="style">New Game</button>
+        </div>
+      </div>
+    </section>
     <div id="title">
-      <p>Game of Thrones Character Quiz</p>
-    </div>
+        <p>Game of Thrones Trivia</p>
+      </div>
+    <div class="game-start">
+        <p>Choose your difficulty level:</p>
+          <ul>
+            <li><button class="difficulty" id="1" type="style"><strong>Easy</strong> - I know a little about Game of Thrones</button></li>
+            <li><button class="difficulty" id="2" type="style"><strong>Medium</strong> - I've watched the show</button></li>
+            <li><button class="difficulty" id="3" type="style"><strong>Hard</strong> - I've read all the books</button></li>
+      </div>
+  <section id="game-area">
+
     <div id="question-count">
-      <p>Question <span id="currentQuestion">1</span> of </span id="totalQuestions">5</span></p>
+      <p>Question <span id="currentQuestion">1</span> of <span id="totalQuestions">5</span></p>
     </div>
     <div class="character-photo">
-      <img src="elements/characterPhotos/JoffreyBaratheon.jpg"/>
+      <img src="#"/>
     </div>
 
-    <div class="question">
-      <p>What is this character's name?</p>
+    <div class="question-wrapper">
+      <span class="question">What is this character's name?</span>
     </div>
 
     <div class="answers">
       <ul>
-        <li>
-          <button class="button">Robert Baratheon</button>
-        </li>
-        <li>
-          <button class="button">John Snow</button>
-        </li>
-        <li>
-          <button class="button">Jaime Lannister</button>
-        </li>
-        <li>
-          <button class="button">Khal Drogo</button>
-        </li>
-        <li>
-          <button class="button">Robb Stark</button>
-        </li>
-        <li>
-          <button class="button">Joffery Baratheon</button>
-        </li>
-        <li>
-          <button class="button">Theon Greyjoy</button>
-        </li>
       </ul>
     </div>
     <div id="button-field">
       <button id="submit">Submit</button>
     </div>
+    <section id="test">
+    <div class="answer-hide">
+      <h3 class="answer-text">Answer</h3>
+    </div>
+    </section>
 
     <div id="score">
-      <p>Answers Correct: 0</p>
-      <p>Wrong Answers: 0</p>
-      <p>Score: 0</p>
+      <p class="correctCount">Correct Answers: 0</p>
+      <p class="incorrectCount">Wrong Answers: 0</p>
+      <p class="scoreCount">Score: 0</p>
     </div>
-
+  </section>
   </div>
-<!-- Angular script -->
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
-<!-- Angular routing -->
-<script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+
+<!-- jQuery script -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <!-- App scripts -->
-<script src=js/app.js></script>
+<script type="text/javascript" src="js/questions.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
 
 </body>
 
