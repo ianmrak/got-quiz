@@ -118,33 +118,3 @@ question5 = {
   qNum: 5,
   picture: 'elements/characterPhotos/The_Wall.jpg'
 }];
-
-// Loads the difficulty - I know there's a better way to do this but I was having trouble with the script load order and getting them to talk to each other //
-function loadEasyQuestions(count) {
-  var list = [];
-  for (var i = 0; i < questionsEasy.length; i++) {
-    list.push(questionsEasy[i]);
-  }
-  count || list.length;
-  return list.slice(0, count);
-};
-
-
-function loadMediumQuestions(count) {
-  var list = [];
-  for (var i = 0; i < questionsMedium.length; i++) {
-    list.push(questionsMedium[i]);
-  }
-  count || list.length;
-  return list.slice(0, count);
-};
-
-
-function loadHardQuestions(count) {
-  var list = [];
-  for (var i = 0; i < questionsHard.length; i++) {
-    list.push(questionsHard[i]);
-  }
-  count || list.length;
-  return list.slice(0, count);
-};
