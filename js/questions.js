@@ -29,7 +29,7 @@ question4 ={
   correct: 'Iron Throne',
   fact: 'The Iron Throne is the throne upon which the King of the Andals and the First Men sits, located in the Great Hall of the Red Keep in the city of King\'s Landing. Besides the King himself (or Lord Regent) only the Hand of the King may sit on the Iron Throne. The term is also used metonymically to refer to the monarchy that rules the Seven Kingdoms and the authority of the King.',
   qNum: 4,
-  picture: 'elements/characterPhotos/Iron_Throne.jpg'
+  picture: 'elements/characterPhotos/Iron_throne.jpg'
 },
 question5 = {
   question: "What is the name of the order Jon Snow joins?",
